@@ -14,7 +14,7 @@
   "routes": [
     { "src": "/api/(.*)", "dest": "backend/backend/wsgi.py" },
     { "src": "/admin/(.*)", "dest": "backend/backend/wsgi.py" },
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/(.*\\.(js|css|svg|png|jpg|jpeg|ico|woff2?))", "dest": "/gharaakar/dist/$1" },
+    { "src": "/(.*)", "dest": "/gharaakar/dist/index.html" }
   ]
 }
